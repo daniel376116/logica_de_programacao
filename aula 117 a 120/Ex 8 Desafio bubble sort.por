@@ -4,7 +4,7 @@ programa {
     inteiro i, j, temp
 
     escreva("Vetor original:\n ")
-    para(i = 0; i < 4; i++) {
+    para(i = 0; i <= 4; i++) {
       escreva(vetor[i], " ")
     }
 
