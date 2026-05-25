@@ -1,0 +1,19 @@
+programa {
+  funcao zerarNegativos(real &temperaturas[],inteiro tamanho) {
+    para (inteiro i = 0; i < tamanho; i++) {
+      se (temperaturas[i] < 0) {
+        temperaturas[i] = 0
+      }
+    }
+  }
+  funcao inicio() {
+
+    real temperaturas[6] = {12, -3, 7, -1, 0, 5}
+
+    escreva("Vetor original: ", temperaturas, "\n")
+    zerarNegativos(temperaturas, 6)
+    escreva("Vetor atualizado: ",temperaturas)
+  }
+}
+
+    
