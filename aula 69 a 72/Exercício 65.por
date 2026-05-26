@@ -1,16 +1,17 @@
 programa {
   funcao inicio() {
-    real numeros
+    real numero 
     inteiro contador = 0
-    para(inteiro i = 1; i <= 20; i++) {
-      escreva("Digite o ", i, "º número: ")
-      leia(numeros)
 
-      se (numeros > 0 e numeros < 100) {
+    para (inteiro i = 0; i < 20; i++) {
+      escreva("Digite o númeo: ")
+      leia(numero)
+
+      se (numero > 0 e numero < 100) {
         contador++
       }
     }
-    escreva(contador, " números estõ entre 0 e 100")
+    escreva(contador," números estão entre 0 e 100")
     
   }
 }
