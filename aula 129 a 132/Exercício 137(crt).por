@@ -22,6 +22,11 @@ programa {
       somaPontos[i] = somar
       somar = 0
     }
+
+      escreva("TOTAL de PONTOS\n")
+    para (i = 0; i < equipes; i++) {
+      escreva("\nEquipe ",nomeTime[i],": ",somaPontos[i]," pontos\n")
+    }
      para (i = 0; i < equipes; i++) {
       se (i == 0 ou somaPontos[i] > guardaPnts) {
         guardaNomeEqp = nomeTime[i]
@@ -29,7 +34,7 @@ programa {
       }
      }
 
-     escreva("A equipe ", guardaNomeEqp," foi campeã com ", guardaPnts," pontos!👏👏")
+     escreva("\nA equipe ", guardaNomeEqp," foi campeã com ", guardaPnts," pontos!👏👏")
     
   }
 }
